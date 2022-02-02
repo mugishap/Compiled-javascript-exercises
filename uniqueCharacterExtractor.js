@@ -1,10 +1,10 @@
-function characterExtractor(string, character) {
+function characterExtractor(string) {
+  let holder = []
     for (i = 0; i < string.length; i++) {
-        if (string[i] == character) {
-            
+           for(j = i+1;j < string.length;j++){
+            if(string[i] == string[j]){holder.push(string[j])}
+           } 
         }
     }
-  var  newString = 
-    console.log(newString)
-}
-characterExtractor('the quick brown fox jumps over the lazy dog','o')
+    console.log(holder.join())
+characterExtractor('the quick brown fox jumps over the lazy dog')

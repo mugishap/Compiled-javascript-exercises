@@ -1,9 +1,8 @@
 function stringCombinationGenerator(word){
-    let newWord =''
     let combinations = []
     for( i = 0; i < word.length;i++){
-        for(j = word[i]+1 ;j <= word-word[i];j++){
-            combinations.push(word[j])
+        for(j = i+1 ;j < word.length+1;j++){
+            combinations.push(word.slice(i, j))
         }
     }
     console.log(combinations.join(','))
