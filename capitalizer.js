@@ -1,11 +1,11 @@
+function capitalize(sentence){
 let holder = []
-function capitalize(sentence) {
-    let separateWord = sentence.split(' ')
-    for (i = 0; i < separateWord.length; i++) {
-        let firstLetter = separateWord[i][0]
-        let newWord = separateWord[i].replace(firstLetter, firstLetter.toUpperCase())
-        holder.push(newWord)
-    }
-    console.log(holder.join(' '))
+let splittedWord = sentence.split(' ')
+for (let i = 0; i < splittedWord.length; i++) {
+    let firstLetter = splittedWord[i][0]
+ let newWords  =  splittedWord[i].replace(firstLetter,firstLetter.toUpperCase())
+holder.push(newWords)
 }
-capitalize('the big brown fox')
+console.log(holder.join(' '))
+}
+capitalize('the big box')

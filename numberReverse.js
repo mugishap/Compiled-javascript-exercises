@@ -1,10 +1,9 @@
-function numberReverse(number) {
-   let stringHolder = number.toString()
-   let reversedString = ''
-   for (i = stringHolder.length-1;i < stringHolder.length; i--){
-reversedString += stringHolder[i]
-   }
-  let reversedNumber = reversedString.parseInt()
-   console.log(reversedNumber)
+function reverseTheNumber(number){
+let stringHolder = ""
+let string = number.toString()
+for(i = string.length-1;i >= 0;i--){
+stringHolder += string[i]
 }
-numberReverse(12345)
+console.log(parseInt(stringHolder))
+}
+reverseTheNumber(856859)

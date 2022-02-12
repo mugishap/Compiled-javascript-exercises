@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentence Reverser</title>
+    <script src="sentenceReverser.js"></script>
     <style>
         #phrase{
             width: 300px;
@@ -22,10 +23,10 @@
 <body>
     <h2>Sentence Reverser!!!</h2>
     Phrase:
-    <input type="text" name="phrase input" id="phrase" placeholder="Enter the phrase"><br><br>
+    <input type="text" id="phrase" placeholder="Enter the phrase"><br><br>
     Filter:
-    <input type="text" name="phrase input" id="filter" placeholder="Enter the characters to be removed"><br><br>
-    <button id="go-btn">Go!</button>
+    <input type="text" id="filter" placeholder="Enter the characters to be removed"><br><br>
+    <button id="go-btn" onclick="test()">Go!</button>
     <p id="result"></p>
 </body>
 </html>

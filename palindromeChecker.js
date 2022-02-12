@@ -1,9 +1,8 @@
-function palindromeChecker(palindrome){
-let palindromeLength = palindrome.length
-let reversed = ''
-for (i = palindromeLength-1; i >= 0; i--){
-    reversed += palindrome[i]
+function palindromeChecker(word){
+    let reversedWord = ""
+    for(i = word.length-1;i >=0;i--){
+reversedWord += word[i]
+    }
+    reversedWord == word?console.log("Word is a palindrome"):console.log("Word is not a palindrome")
 }
-reversed == palindrome ? console.log('The word entered is a palindrome!!!') : console.log('The word is not a palindrome!!!')
-}
-palindromeChecker('nursesrun')
+palindromeChecker("precieux")
