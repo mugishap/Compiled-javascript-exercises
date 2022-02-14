@@ -5,4 +5,4 @@ reversedWord += word[i]
     }
     reversedWord == word?console.log("Word is a palindrome"):console.log("Word is not a palindrome")
 }
-palindromeChecker("precieux")
+palindromeChecker("nursesrun")

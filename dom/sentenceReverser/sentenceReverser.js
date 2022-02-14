@@ -1,13 +1,15 @@
-let button = document.getElementById('go-btn')
 
-function test(){
-   let phrase = document.getElementById('phrase').value
-   let filter = document.getElementById('filter').value
-   let output = document.getElementById('result')
-
-   for(i = phrase.length-1;i<phrase.length;i--){
-let result = ''
-result += phrase[i]
+function reverseAndFilter(){
+   let button = document.querySelector('#go-btn')
+   let phrase = document.querySelector('#phrase').value
+   let filter = document.querySelector('#filter').value
+   let newPhrase = []
+   let splittedWords = phrase.split(' ')
+   for (let i = splittedWords.length-1; i >= 0; i--) {
+newPhrase.push(splittedWords[i])
    }
-   output.textContent = result
+let outputText = document.createTextNode(newPhrase.join(' '))
+let output = document.createElement('p').appendChild(outputText)
+
+document.querySelector('#result').appendChild(output)
 }
